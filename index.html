@@ -36,7 +36,7 @@ a{color:inherit}
 img{max-width:100%;display:block}
 .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
 .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap}
-.ph{background:linear-gradient(135deg,#3a1820,#6b2c3a 60%,#2e3f8f);} /* image placeholder while loading / if blocked */
+.ph{background:repeating-linear-gradient(-62deg,rgba(255,255,255,.06) 0 14px,transparent 14px 28px),linear-gradient(135deg,#3a1820,#6b2c3a 60%,#2e3f8f)} /* image placeholder while loading / if blocked */
 .ph img{width:100%;height:100%;object-fit:cover}
 
 /* buttons */
@@ -302,32 +302,117 @@ html[dir="rtl"] .wa-float .bubble{transform:translateX(-10px)}
 }
 @media (max-width:370px){header .brand small{display:none}}
 @media (max-width:640px){
-  section{padding:76px 0}
+  section{padding:60px 0}
+  .wrap{padding:0 18px}
   .topbar{display:none}
+  .nav{height:64px}
+  .links{top:64px}
+  html{scroll-padding-top:72px}
+  .brand{gap:9px}
+  .brand b{font-size:1.08rem}
+  .brand small{font-size:.68rem}
+  .brand img{width:38px;height:35px}
+  .lang{padding:6px 10px;font-size:.8rem}
+  .menu-btn{padding:6px}
+
   .hero{min-height:auto}
-  .hero .wrap{padding-top:56px;padding-bottom:64px}
+  .hero .wrap{padding-top:40px;padding-bottom:44px}
   .hero::after{display:none}
-  .cta .btn{flex:1 1 100%}
-  .brand b{font-size:1.12rem}
-  .brand small{font-size:.7rem}
-  .lang{padding:7px 11px}
-  .brand img{width:42px;height:38px}
-  .nav{height:68px}
-  .links{top:68px}
-  .trust .wrap{grid-template-columns:1fr}
-  .t-item{border-inline-start:0!important;padding-inline-start:0;padding:18px 0}
-  .t-item:nth-child(n+2){border-top:1px solid var(--line)}
-  .svc-grid,.sec-grid,.row{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr 1fr}
-  .badge{inset-inline-start:-10px;padding:12px 14px}
-  .split-media .ph.small{inset-inline-end:-14px}
-  form{padding:24px}
-  .f-grid{grid-template-columns:1fr}
-  .wa-float{bottom:84px;inset-inline-end:16px}
-  .wa-float .circle{width:56px;height:56px}
-  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;inset-inline:0;z-index:55;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -8px 24px -12px rgba(0,0,0,.25)}
+  .hero::before{background:linear-gradient(180deg,rgba(23,6,9,.88),rgba(42,16,22,.92))!important}
+  .pill{font-size:.76rem;padding:6px 12px 6px 6px}
+  html[dir="rtl"] .pill{padding:6px 6px 6px 12px}
+  .pill i{width:18px;height:18px;font-size:.65rem}
+  .hero h1{font-size:2.35rem;margin:16px 0 14px;line-height:1.02}
+  html[lang="ar"] .hero h1{font-size:2rem;line-height:1.35}
+  .hero p.lead{font-size:1rem}
+  .cta{margin-top:24px;gap:10px}
+  .cta .btn{flex:1 1 100%;padding:13px 18px}
+  .hero-trust{flex-direction:column;gap:8px;margin-top:24px;padding-top:18px;font-size:.88rem}
+
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:0}
+  .t-item{flex-direction:column;align-items:flex-start;gap:8px;padding:16px 10px!important;border-inline-start:0!important;border-top:0!important}
+  .t-item:nth-child(odd){border-inline-end:1px solid var(--line)}
+  .t-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .t-item:nth-child(even){padding-inline-start:14px!important}
+  .t-ic{width:38px;height:38px;border-radius:10px}
+  .t-ic svg{width:18px;height:18px}
+  .t-item b{font-size:.9rem}
+  .t-item small{font-size:.76rem;line-height:1.4;display:block}
+
+  .sec-head{margin-bottom:30px}
+  .sec-head h2,.h2{font-size:1.85rem;margin:10px 0 10px}
+  html[lang="ar"] .sec-head h2,html[lang="ar"] .h2{font-size:1.6rem}
+  .sec-head p{font-size:.98rem}
+  .eyebrow{font-size:.72rem}
+  html[lang="ar"] .eyebrow{font-size:.85rem}
+
+  .svc-grid,.row{grid-template-columns:1fr}
+  .svc-grid{gap:16px}
+  .svc .ph{aspect-ratio:2/1}
+  .svc-body{padding:18px 18px 20px}
+  .svc h3{font-size:1.08rem}
+  .svc p{font-size:.92rem}
+  .svc ul{margin:10px 0 14px;gap:4px}
+  .svc li{font-size:.86rem}
+  .svc:hover{transform:none}
+
+  .split-media{width:100%;margin:0!important}
+  .split-media .ph{aspect-ratio:16/11}
+  .split-media .ph.small{display:none}
+  .badge{top:auto;bottom:14px;inset-inline-start:14px;padding:10px 14px;max-width:none}
+  .badge b{font-size:1.2rem}
+  .badge small{font-size:.78rem}
+  .split-grid{gap:32px}
+  .split p.lead{font-size:.98rem}
+  .checks{gap:12px;margin:20px 0 24px}
+  .checks span{font-size:.9rem}
+  .split .btn{width:100%}
+
+  .steps{grid-template-columns:1fr;gap:0;row-gap:0}
+  .step{display:grid;grid-template-columns:52px 1fr;column-gap:16px;text-align:start;padding:0 0 22px;position:relative}
+  .step::before{content:"";position:absolute;top:52px;bottom:0;inset-inline-start:25px;width:2px;background:var(--line)}
+  .step:last-child::before{display:none}
+  .step .dot{width:52px;height:52px;margin:0;grid-row:span 2}
+  .step .dot svg{width:20px;height:20px}
+  .step h3{margin:4px 0 2px;align-self:end}
+  .step p{font-size:.88rem}
+
+  .sec-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .sector{aspect-ratio:3/4}
+  .sector div.t{padding:14px}
+  .sector h3{font-size:.98rem;line-height:1.3}
+  .sector p{font-size:.78rem;line-height:1.4}
+
+  .band{padding:52px 0}
+  .band h2{font-size:1.75rem}
+  html[lang="ar"] .band h2{font-size:1.5rem}
+  .band p{font-size:.95rem}
+  .band .cta{width:100%}
+
+  .faq-grid{gap:24px}
+  summary{font-size:.98rem;padding:16px 0}
+  summary .pm{width:28px;height:28px}
+  details p{padding:0 0 18px!important;font-size:.92rem}
+
+  .c-grid{gap:20px}
+  .office .ph{aspect-ratio:4/3}
+  .office-body{padding:18px}
+  form{padding:22px 18px}
+  form h3{font-size:1.5rem}
+  html[lang="ar"] form h3{font-size:1.3rem}
+  input,textarea,select{font-size:16px}
+  .map{height:240px;margin-top:20px}
+
+  footer{padding-top:48px}
+  .f-grid{grid-template-columns:1fr 1fr;gap:28px 20px;padding-bottom:32px}
+  .f-grid > div:first-child,.f-grid > div:last-child{grid-column:1/-1}
+  .f-bottom{flex-direction:column;gap:4px}
+
+  /* bottom bar replaces the floating button on phones */
+  .wa-float{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;inset-inline:0;z-index:55;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:8px 12px calc(8px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -8px 24px -12px rgba(0,0,0,.2)}
   .mbar .btn{padding:12px;font-size:.95rem}
-  body{padding-bottom:72px}
+  body{padding-bottom:70px}
 }
 </style>
 </head>
