@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620" role="img" aria-label="Maulam Safnan Trading &amp; Co. LLC logo">
+  <g fill="#5a2330">
+    <polygon points="48,590 110,590 342,70 318,18"/>
+    <polygon points="120,590 182,590 380,132 354,82"/>
+    <polygon points="192,590 254,590 414,198 388,146"/>
+  </g>
+  <g fill="#3f5fd8">
+    <rect x="453" y="300" width="16" height="56" rx="4"/>
+    <rect x="420" y="316" width="82" height="16" rx="8"/>
+    <rect x="443" y="350" width="36" height="22" rx="4"/>
+    <path d="M523 470 c-10 16 -14 24 -14 31 a14 14 0 0 0 28 0 c0 -7 -4 -15 -14 -31z" fill="#7d93ea"/>
+    <rect x="288" y="562" width="28" height="36" rx="5"/>
+  </g>
+  <path d="M523 440 V415 Q523 385 490 385 H405 Q368 385 368 422 Q368 460 405 460 H515 Q562 460 568 505 V552 Q568 580 540 580 H310"
+        fill="none" stroke="#3f5fd8" stroke-width="30" stroke-linejoin="round"/>
+</svg>
