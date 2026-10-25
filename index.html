@@ -3,429 +3,786 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maulam Safnan Trading &amp; Co. LLC</title>
-<meta name="description" content="Maulam Safnan Trading & Co. LLC (معالم صفنان للتجارة والمقاولات) — trading and contracting company in the Sultanate of Oman. Office: Azaiba, Muscat.">
+<title>Maulam Safnan Trading &amp; Co. LLC | Contracting, Plumbing &amp; Building Supply in Oman</title>
+<meta name="description" content="Maulam Safnan Trading & Co. LLC (معالم صفنان للتجارة والمقاولات) — building contracting, plumbing & water works and construction material supply across Oman. Office in Azaiba, Muscat. Get a quotation on WhatsApp.">
+<meta name="theme-color" content="#2a1016">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<meta property="og:title" content="Maulam Safnan Trading & Co. LLC">
-<meta property="og:description" content="Trading & contracting in the Sultanate of Oman.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maulam Safnan Trading & Co. LLC — Contracting & Supply in Oman">
+<meta property="og:description" content="Building contracting, plumbing & water works and material supply. Get a quotation on WhatsApp: +968 7742 1246.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=70">
+<link rel="preconnect" href="https://images.unsplash.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,600;1,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"Maulam Safnan Trading & Co. LLC","alternateName":"معالم صفنان للتجارة والمقاولات","telephone":"+96824231304","address":{"@type":"PostalAddress","streetAddress":"2nd Floor, Office No. 6","addressLocality":"Azaiba, Muscat","postalCode":"130","addressCountry":"OM"},"areaServed":"Oman"}
+</script>
 <style>
 :root{
-  --maroon:#5a2330; --maroon-deep:#2a1016; --blue:#3f5fd8; --blue-soft:#e8edfc;
-  --ink:#1c1416; --muted:#6b5f62; --paper:#fbf9f8; --line:#e7e0de; --card:#ffffff;
-  --granite:radial-gradient(circle at 20% 30%,#7a3a2c 0 1px,transparent 1.5px),radial-gradient(circle at 70% 60%,#a2584a 0 1px,transparent 1.5px),radial-gradient(circle at 40% 80%,#3a1610 0 1px,transparent 1.5px),#6b2c22;
-  --font: "IBM Plex Sans", system-ui, sans-serif;
-  --display: "Barlow Condensed", "IBM Plex Sans", sans-serif;
+  --maroon:#5a2330; --maroon-2:#7a3242; --deep:#2a1016; --deeper:#170609;
+  --blue:#3f5fd8; --blue-2:#2f4bc0; --blue-soft:#e9eefd;
+  --wa:#25d366; --wa-2:#1ebe5a;
+  --ink:#1c1416; --muted:#6b5f62; --paper:#fbf9f8; --sand:#f4efec; --line:#e7e0de; --card:#fff;
+  --font:"IBM Plex Sans",system-ui,sans-serif;
+  --display:"Barlow Condensed","IBM Plex Sans",sans-serif;
+  --r:14px; --shadow:0 20px 50px -24px rgba(42,16,22,.35);
 }
-html[lang="ar"]{ --font:"IBM Plex Sans Arabic", system-ui, sans-serif; --display:"IBM Plex Sans Arabic", sans-serif; }
+html[lang="ar"]{--font:"IBM Plex Sans Arabic",system-ui,sans-serif;--display:"IBM Plex Sans Arabic",sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
 img{max-width:100%;display:block}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap}
+.ph{background:linear-gradient(135deg,#3a1820,#6b2c3a 60%,#2e3f8f);} /* image placeholder while loading / if blocked */
+.ph img{width:100%;height:100%;object-fit:cover}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:8px;font:600 1rem var(--font);text-decoration:none;border:0;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{flex:none}
+.btn-wa{background:var(--wa);color:#06391b;box-shadow:0 10px 24px -10px rgba(37,211,102,.7)}
+.btn-wa:hover{background:var(--wa-2)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(63,95,216,.8)}
+.btn-blue:hover{background:var(--blue-2)}
+.btn-line{border:1.5px solid rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.04)}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--deep);color:#fff}
+.btn-dark:hover{background:var(--maroon)}
+.btn-sm{padding:10px 16px;font-size:.92rem}
+
+/* topbar */
+.topbar{background:var(--deeper);color:#cdb8bc;font-size:.84rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;height:40px;align-items:center}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:#fff}
+.topbar .tb{display:flex;gap:22px;align-items:center}
+.topbar .tb span{display:inline-flex;gap:7px;align-items:center}
 
 /* header */
-header{position:sticky;top:0;z-index:20;background:rgba(251,249,248,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{width:44px;height:40px}
-.brand b{font-family:var(--display);font-style:italic;font-weight:700;font-size:1.25rem;color:var(--maroon-deep);letter-spacing:.01em;line-height:1}
-html[lang="ar"] .brand b{font-style:normal;font-size:1.05rem}
-.brand small{display:block;font-size:.72rem;color:var(--muted);font-weight:500}
-.links{display:flex;gap:26px;align-items:center;list-style:none}
-.links a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted)}
-.links a:hover{color:var(--maroon)}
-.lang{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;font:600 .85rem var(--font);cursor:pointer;color:var(--maroon-deep)}
+header{position:sticky;top:0;z-index:40;background:rgba(251,249,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .2s}
+header.scrolled{box-shadow:0 8px 24px -16px rgba(0,0,0,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand img{width:48px;height:44px;flex:none}
+.brand b{display:block;font-family:"Barlow Condensed",sans-serif;font-style:italic;font-weight:700;font-size:1.32rem;color:var(--deep);line-height:1;letter-spacing:.01em}
+.brand b,.brand small{white-space:nowrap}
+.brand small{display:block;font-family:"IBM Plex Sans Arabic",sans-serif;font-size:.8rem;color:var(--maroon);font-weight:600;margin-top:3px}
+.links{display:flex;gap:28px;list-style:none;align-items:center}
+.links a{text-decoration:none;font-weight:500;font-size:.96rem;color:var(--muted);position:relative;padding:6px 0}
+.links a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--blue);transform:scaleX(0);transition:transform .2s}
+.links a:hover{color:var(--deep)}
+.links a:hover::after{transform:scaleX(1)}
+.nav-r{display:flex;gap:10px;align-items:center}
+.lang{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 14px;font:600 .86rem var(--font);cursor:pointer;color:var(--deep)}
+html[lang="en"] .lang{font-family:"IBM Plex Sans Arabic",sans-serif}
 .lang:hover{border-color:var(--maroon)}
-.menu-btn{display:none;background:none;border:0;cursor:pointer;padding:6px}
-.menu-btn span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0}
+.menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.2s}
 
 /* hero */
-.hero{position:relative;overflow:hidden;background:var(--maroon-deep);color:#fff}
-.hero::before{content:"";position:absolute;inset:0;background:var(--granite);background-size:7px 7px,11px 11px,9px 9px,auto;opacity:.35}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--maroon-deep) 35%,rgba(42,16,22,.75) 70%,rgba(42,16,22,.4))}
-html[dir="rtl"] .hero::after{background:linear-gradient(-100deg,var(--maroon-deep) 35%,rgba(42,16,22,.75) 70%,rgba(42,16,22,.4))}
-.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding-top:90px;padding-bottom:100px}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#d9b7bd}
-html[lang="ar"] .eyebrow{letter-spacing:0}
-.eyebrow::before{content:"";width:28px;height:2px;background:var(--blue)}
-.hero h1{font-family:var(--display);font-style:italic;font-weight:700;font-size:clamp(2.6rem,6vw,4.6rem);line-height:.98;margin:18px 0 10px;letter-spacing:.005em}
-html[lang="ar"] .hero h1{font-style:normal;line-height:1.25;font-size:clamp(2.2rem,5vw,3.8rem)}
-.hero .alt{font-family:"IBM Plex Sans Arabic",sans-serif;font-size:1.5rem;font-weight:700;color:#e9cfd4;margin-bottom:22px}
-html[lang="ar"] .hero .alt{font-family:"Barlow Condensed",sans-serif;font-style:italic;font-size:1.6rem}
-.hero p.lead{max-width:560px;font-size:1.1rem;color:#efe3e5}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.97rem;transition:transform .15s,background .15s}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--blue);color:#fff}
-.btn-primary:hover{background:#3150c4}
-.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.08)}
-.hero-mark{background:#fff;border-radius:14px;padding:34px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);transform:rotate(-2deg)}
-html[dir="rtl"] .hero-mark{transform:rotate(2deg)}
-.hero-mark img{width:100%;height:auto}
-.hero-mark .reg{margin-top:18px;border-top:1px dashed var(--line);padding-top:14px;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:10px}
-.hero-mark .reg b{color:var(--maroon-deep)}
+.hero{position:relative;color:#fff;min-height:calc(100vh - 116px);min-height:calc(100svh - 116px);display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:zoom 22s ease-out forwards}
+@keyframes zoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(23,6,9,.94) 0%,rgba(42,16,22,.82) 45%,rgba(42,16,22,.35) 100%)}
+html[dir="rtl"] .hero::before{background:linear-gradient(270deg,rgba(23,6,9,.94) 0%,rgba(42,16,22,.82) 45%,rgba(42,16,22,.35) 100%)}
+.hero::after{content:"";position:absolute;inset-inline-end:-120px;bottom:-60px;width:520px;height:520px;z-index:-1;background:repeating-linear-gradient(-62deg,rgba(255,255,255,.06) 0 26px,transparent 26px 52px);clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)}
+.hero .wrap{width:100%;padding-top:72px;padding-bottom:88px}
+.hero-inner{max-width:700px}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 14px 7px 8px;border-radius:999px;font-size:.86rem;font-weight:500;backdrop-filter:blur(6px)}
+html[dir="rtl"] .pill{padding:7px 8px 7px 14px}
+.pill i{width:22px;height:22px;border-radius:50%;background:var(--wa);display:grid;place-items:center;font-style:normal;color:#06391b;font-size:.75rem;font-weight:700}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.7rem,6.4vw,5.2rem);line-height:.98;margin:22px 0 22px;text-transform:uppercase;letter-spacing:.005em}
+html[lang="ar"] .hero h1{text-transform:none;line-height:1.25;font-size:clamp(2.3rem,5.4vw,4.2rem)}
+.hero h1 em{font-style:italic;color:#9fb1ff}
+html[lang="ar"] .hero h1 em{font-style:normal}
+.hero p.lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:#eadde0;max-width:580px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:40px;padding-top:26px;border-top:1px solid rgba(255,255,255,.15);font-size:.92rem;color:#e0d0d3}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px}
+.hero-trust svg{color:#8fd9a8}
 
-/* strip */
-.strip{background:var(--card);border-bottom:1px solid var(--line)}
-.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.strip div.item{padding:26px 20px;border-inline-start:1px solid var(--line)}
-.strip div.item:first-child{border-inline-start:0}
-.strip small{display:block;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
-html[lang="ar"] .strip small{letter-spacing:0}
-.strip strong{font-size:1.08rem;color:var(--maroon-deep)}
+/* trust bar */
+.trust{background:var(--card);border-bottom:1px solid var(--line);position:relative;z-index:2}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.t-item{display:flex;gap:14px;align-items:center;padding:26px 20px;border-inline-start:1px solid var(--line)}
+.t-item:first-child{border-inline-start:0;padding-inline-start:0}
+.t-ic{flex:none;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue)}
+.t-ic.m{background:#f6eaed;color:var(--maroon)}
+.t-item b{display:block;color:var(--deep);font-size:1rem;line-height:1.3}
+.t-item small{color:var(--muted);font-size:.85rem}
 
 /* sections */
-section{padding:96px 0}
-.sec-head{max-width:680px;margin-bottom:48px}
-.sec-head h2{font-size:clamp(1.9rem,3.5vw,2.6rem);line-height:1.15;color:var(--maroon-deep);margin:12px 0 14px;font-weight:600}
-.sec-head p{color:var(--muted);font-size:1.05rem}
-.eyebrow.dark{color:var(--maroon)}
+section{padding:104px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--maroon)}
+html[lang="ar"] .eyebrow{letter-spacing:0;font-size:.92rem}
+.eyebrow::before{content:"";width:30px;height:2px;background:var(--blue)}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head.center .eyebrow{justify-content:center}
+.sec-head h2,.h2{font-family:var(--display);font-weight:700;font-size:clamp(2.1rem,4.2vw,3.3rem);line-height:1.05;color:var(--deep);margin:14px 0 16px;text-transform:uppercase}
+html[lang="ar"] .sec-head h2,html[lang="ar"] .h2{text-transform:none;line-height:1.3;font-size:clamp(1.9rem,3.6vw,2.7rem)}
+.sec-head p{color:var(--muted);font-size:1.08rem}
 
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.about-grid p{color:#3f3437;margin-bottom:16px;font-size:1.04rem}
-.facts{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.facts dl{display:grid;grid-template-columns:auto 1fr}
-.facts dt,.facts dd{padding:15px 22px;border-bottom:1px solid var(--line)}
-.facts dt{color:var(--muted);font-size:.9rem;font-weight:500;background:#faf7f6}
-.facts dd{font-weight:600;color:var(--maroon-deep)}
-.facts dl > :nth-last-child(-n+2){border-bottom:0}
-.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap}
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.svc .ph{aspect-ratio:16/10;overflow:hidden;position:relative}
+.svc .ph img{transition:transform .6s}
+.svc:hover .ph img{transform:scale(1.06)}
+.svc .num{position:absolute;top:14px;inset-inline-start:14px;background:rgba(23,6,9,.75);color:#fff;font:700 .85rem "Barlow Condensed",sans-serif;letter-spacing:.08em;padding:5px 10px;border-radius:6px;backdrop-filter:blur(4px)}
+.svc-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.svc h3{font-size:1.2rem;color:var(--deep);margin-bottom:8px;font-weight:600}
+.svc p{color:var(--muted);font-size:.97rem;flex:1}
+.svc ul{list-style:none;margin:14px 0 18px;display:grid;gap:6px}
+.svc li{font-size:.9rem;color:#4a3e41;display:flex;gap:8px;align-items:flex-start}
+.svc li::before{content:"";flex:none;width:7px;height:7px;margin-top:8px;border-radius:2px;background:var(--blue);transform:rotate(45deg)}
+.svc .more{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--blue);text-decoration:none;font-size:.95rem;margin-top:auto}
+.svc .more:hover{gap:12px}
+html[dir="rtl"] .svc .more svg,html[dir="rtl"] .flip{transform:scaleX(-1)}
 
-.services{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.svc{border:1px solid var(--line);border-radius:12px;padding:30px 26px;background:var(--paper);position:relative;overflow:hidden;transition:border-color .2s,transform .2s}
-.svc:hover{border-color:var(--maroon);transform:translateY(-3px)}
-.svc::after{content:"";position:absolute;inset-inline-end:-30px;top:-30px;width:90px;height:90px;background:repeating-linear-gradient(-60deg,var(--maroon) 0 8px,transparent 8px 16px);opacity:.07}
-.svc .ic{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue);margin-bottom:18px}
-.svc .ic.m{background:#f5e9eb;color:var(--maroon)}
-.svc h3{font-size:1.15rem;color:var(--maroon-deep);margin-bottom:8px;font-weight:600}
-.svc p{color:var(--muted);font-size:.96rem}
+/* split */
+.split{background:var(--sand)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split-media{position:relative}
+.split-media .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+.split-media .ph.small{position:absolute;width:46%;aspect-ratio:1;bottom:-34px;inset-inline-end:-26px;border:6px solid var(--sand);box-shadow:var(--shadow)}
+.badge{position:absolute;top:28px;inset-inline-start:-22px;background:var(--blue);color:#fff;border-radius:12px;padding:16px 20px;box-shadow:var(--shadow);max-width:210px}
+.badge b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:1.6rem;line-height:1;font-weight:700}
+html[lang="ar"] .badge b{font-family:var(--font);font-size:1.25rem}
+.badge small{font-size:.85rem;opacity:.9}
+.checks{list-style:none;display:grid;gap:16px;margin:28px 0 34px}
+.checks li{display:flex;gap:14px}
+.checks .ck{flex:none;width:28px;height:28px;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center;margin-top:2px}
+.checks b{display:block;color:var(--deep)}
+.checks span{color:var(--muted);font-size:.96rem}
+.split p.lead{color:#4a3e41;font-size:1.06rem}
 
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--maroon-deep)}
-.why{padding:28px 22px 10px 0}
-html[dir="rtl"] .why{padding:28px 0 10px 22px}
-.why span{font-family:"Barlow Condensed",sans-serif;font-style:italic;font-weight:700;font-size:2.4rem;color:var(--blue);line-height:1}
-.why h3{font-size:1.05rem;margin:10px 0 6px;color:var(--maroon-deep);font-weight:600}
-.why p{color:var(--muted);font-size:.94rem}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;top:30px;inset-inline:10%;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 10px,transparent 10px 18px)}
+.step{text-align:center;position:relative;padding:0 6px}
+.step .dot{width:62px;height:62px;margin:0 auto 18px;border-radius:50%;background:var(--card);border:2px solid var(--line);display:grid;place-items:center;color:var(--maroon);position:relative;transition:.25s}
+.step:hover .dot{background:var(--deep);color:#fff;border-color:var(--deep)}
+.step .dot::after{counter-increment:s;content:counter(s);position:absolute;top:-6px;inset-inline-end:-6px;width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;font:700 .78rem var(--font);display:grid;place-items:center}
+.step h3{font-size:1.05rem;color:var(--deep);margin-bottom:6px;font-weight:600}
+.step p{font-size:.9rem;color:var(--muted)}
 
-.areas{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:56px}
-.area{border-radius:12px;padding:30px;color:#fff;position:relative;overflow:hidden;min-height:180px;display:flex;flex-direction:column;justify-content:flex-end}
-.area.a1{background:linear-gradient(135deg,var(--maroon-deep),var(--maroon))}
-.area.a2{background:linear-gradient(135deg,#1f2f73,var(--blue))}
-.area small{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;opacity:.75;font-weight:600}
-html[lang="ar"] .area small{letter-spacing:0}
-.area h3{font-size:1.5rem;margin:4px 0;font-weight:600}
-.area p{opacity:.85;font-size:.95rem}
+/* sectors */
+.sectors{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.sectors::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 400px at 85% 0%,rgba(63,95,216,.28),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(122,50,66,.5),transparent 60%)}
+.sectors .wrap{position:relative}
+.sectors .sec-head h2{color:#fff}
+.sectors .sec-head p{color:#d6c4c8}
+.sectors .eyebrow{color:#e3bfc6}
+.sec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sector{border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:3/4;display:flex;align-items:flex-end;isolation:isolate}
+.sector .ph{position:absolute;inset:0;z-index:-2}
+.sector .ph img{transition:transform .6s}
+.sector:hover .ph img{transform:scale(1.07)}
+.sector::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 30%,rgba(23,6,9,.92))}
+.sector div.t{padding:22px}
+.sector h3{font-size:1.2rem;font-weight:600;margin-bottom:4px}
+.sector p{font-size:.9rem;color:#e2d5d8}
+
+/* cta band */
+.band{position:relative;color:#fff;padding:88px 0;isolation:isolate;overflow:hidden}
+.band .ph{position:absolute;inset:0;z-index:-2}
+.band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(47,75,192,.95),rgba(42,16,22,.9))}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.band h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(2rem,4vw,3rem);line-height:1.05;font-weight:700;max-width:640px}
+html[lang="ar"] .band h2{text-transform:none;line-height:1.3;font-size:clamp(1.8rem,3.4vw,2.5rem)}
+.band p{color:#e4e8fb;margin-top:10px;font-size:1.06rem}
+.band .cta{margin-top:0}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.faq-side{position:sticky;top:110px}
+.faq-side .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;margin-top:28px}
+details{border-bottom:1px solid var(--line);padding:4px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:20px 0;font-weight:600;font-size:1.06rem;color:var(--deep);display:flex;justify-content:space-between;gap:20px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:32px;height:32px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;transition:.25s;color:var(--maroon)}
+details[open] summary .pm{transform:rotate(45deg);background:var(--deep);color:#fff;border-color:var(--deep)}
+details p{color:var(--muted);padding:0 48px 22px 0}
+html[dir="rtl"] details p{padding:0 0 22px 48px}
 
 /* contact */
-.contact{background:var(--maroon-deep);color:#fff;position:relative;overflow:hidden}
-.contact::before{content:"";position:absolute;inset:0;background:var(--granite);background-size:7px 7px,11px 11px,9px 9px,auto;opacity:.18}
-.contact .wrap{position:relative}
-.contact .sec-head h2{color:#fff}
-.contact .sec-head p{color:#dcc9cc}
-.contact .eyebrow{color:#d9b7bd}
-.c-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
-.c-cards{display:grid;gap:14px}
-.c-card{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:18px 20px;text-decoration:none;transition:background .2s}
-a.c-card:hover{background:rgba(255,255,255,.11)}
-.c-card .ic{flex:none;width:40px;height:40px;border-radius:8px;background:var(--blue);display:grid;place-items:center}
-.c-card small{display:block;color:#cdb5ba;font-size:.8rem}
-.c-card strong{font-size:1.05rem;font-weight:600}
-form{background:#fff;color:var(--ink);border-radius:12px;padding:30px}
-form h3{color:var(--maroon-deep);margin-bottom:18px;font-weight:600}
+.contact{background:var(--sand)}
+.c-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:32px;align-items:start}
+.office{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.office .ph{aspect-ratio:16/11;background:#222}
+.office .ph img{object-position:center 40%}
+.office-body{padding:24px}
+.office-body h3{color:var(--deep);font-size:1.15rem;margin-bottom:4px}
+.office-body > p{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+.c-list{display:grid;gap:10px}
+.c-row{display:flex;gap:14px;align-items:center;padding:12px 14px;border-radius:10px;background:var(--paper);text-decoration:none;border:1px solid transparent;transition:.2s}
+a.c-row:hover{border-color:var(--line);background:#fff}
+.c-row .ic{flex:none;width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--deep);color:#fff}
+.c-row .ic.wa{background:var(--wa);color:#06391b}
+.c-row small{display:block;color:var(--muted);font-size:.8rem}
+.c-row strong{color:var(--deep);font-size:1rem}
+form{background:var(--card);border-radius:var(--r);padding:34px;border:1px solid var(--line);box-shadow:var(--shadow)}
+form h3{font-family:var(--display);text-transform:uppercase;font-size:1.9rem;line-height:1.1;color:var(--deep);font-weight:700}
+html[lang="ar"] form h3{text-transform:none;font-size:1.6rem}
+form .sub{color:var(--muted);margin:6px 0 24px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-label{display:block;font-size:.85rem;font-weight:600;color:var(--muted);margin-bottom:14px}
-input,textarea,select{width:100%;margin-top:6px;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font:inherit;font-size:.97rem;color:var(--ink);background:var(--paper)}
-input:focus,textarea:focus,select:focus{outline:2px solid var(--blue);outline-offset:-1px;border-color:transparent}
-textarea{min-height:110px;resize:vertical}
-form .btn{border:0;cursor:pointer;width:100%;justify-content:center;font-family:inherit}
-form .note{font-size:.8rem;color:var(--muted);margin-top:10px;text-align:center}
-.map{margin-top:28px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.15);height:300px}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3)}
+label{display:block;font-size:.86rem;font-weight:600;color:#4a3e41;margin-bottom:16px}
+input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;color:var(--ink);background:var(--paper);transition:border-color .2s}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--blue);background:#fff}
+textarea{min-height:120px;resize:vertical}
+form .btn{width:100%;margin-top:4px;font-size:1.04rem;padding:16px}
+form .note{font-size:.82rem;color:var(--muted);margin-top:12px;text-align:center}
+.map{margin-top:32px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);height:320px;background:linear-gradient(135deg,#e9e3e0,#d9d0cc);position:relative}
+.map iframe{width:100%;height:100%;border:0;position:relative;z-index:1}
+.map a{position:absolute;inset:0;display:grid;place-items:center;text-decoration:none;color:var(--deep);font-weight:600}
 
-footer{background:#1a0a0e;color:#b8a4a8;padding:36px 0;font-size:.88rem}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+/* footer */
+footer{background:var(--deeper);color:#bba6aa;padding:72px 0 0;font-size:.94rem}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:52px}
 footer .brand b{color:#fff}
-footer .brand img{background:#fff;border-radius:6px;padding:4px}
+footer .brand small{color:#d9a9b3}
+footer .brand img{background:#fff;border-radius:8px;padding:5px;width:52px;height:48px}
+footer p.about{margin:18px 0 0;max-width:320px}
+footer h4{color:#fff;font-size:.95rem;margin-bottom:16px;font-weight:600}
+footer ul{list-style:none;display:grid;gap:10px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+.f-bottom{border-top:1px solid rgba(255,255,255,.08);padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem}
 
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+/* floating whatsapp */
+.wa-float{position:fixed;bottom:24px;inset-inline-end:24px;z-index:60;display:flex;align-items:center;gap:10px;text-decoration:none}
+.wa-float .bubble{background:#fff;color:var(--deep);padding:10px 14px;border-radius:12px;font-size:.9rem;font-weight:600;box-shadow:0 10px 30px -10px rgba(0,0,0,.35);opacity:0;transform:translateX(10px);transition:.3s;pointer-events:none;white-space:nowrap}
+html[dir="rtl"] .wa-float .bubble{transform:translateX(-10px)}
+.wa-float.show-tip .bubble,.wa-float:hover .bubble{opacity:1;transform:none}
+.wa-float .circle{width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.75);position:relative;transition:transform .2s}
+.wa-float:hover .circle{transform:scale(1.07)}
+.wa-float .circle::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--wa);z-index:-1;animation:pulse 2.2s infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+
+/* mobile action bar */
+.mbar{display:none}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero-bg img{animation:none}.wa-float .circle::before{animation:none}html{scroll-behavior:auto}}
 
-@media (max-width:960px){
-  .hero .wrap,.about-grid,.c-grid{grid-template-columns:1fr}
-  .hero-mark{max-width:340px}
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .why-grid{grid-template-columns:1fr 1fr}
-  .strip .wrap{grid-template-columns:1fr 1fr}
-  .strip div.item:nth-child(3){border-inline-start:0}
-  .strip div.item:nth-child(n+3){border-top:1px solid var(--line)}
+@media (max-width:1080px){
+  .links{gap:20px}
+  .nav .btn-quote{display:none}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:40px}
+  .steps::before{display:none}
+  .sec-grid{grid-template-columns:repeat(2,1fr)}
+  .sector{aspect-ratio:4/3}
+  .f-grid{grid-template-columns:1fr 1fr}
 }
-@media (max-width:720px){
-  .links{display:none;position:absolute;top:70px;inset-inline:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 20px 16px}
+@media (max-width:900px){
+  .topbar .hide-m{display:none}
+  .links{display:none;position:absolute;top:76px;inset-inline:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:6px 20px 18px;box-shadow:0 20px 30px -20px rgba(0,0,0,.3)}
   .links.open{display:flex}
-  .links li a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+  .links li a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+  .links a::after{display:none}
   .menu-btn{display:block}
-  .brand small{display:none}
-  section{padding:68px 0}
-  .hero .wrap{padding-top:60px;padding-bottom:70px}
-  .svc-grid,.areas,.row{grid-template-columns:1fr}
-  .why-grid{grid-template-columns:1fr}
-  .facts dl{grid-template-columns:1fr}
-  .facts dt{border-bottom:0;padding-bottom:4px}
-  .facts dd{padding-top:0}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .t-item:nth-child(3){border-inline-start:0;padding-inline-start:0}
+  .t-item:nth-child(n+3){border-top:1px solid var(--line)}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .split-grid,.faq-grid,.c-grid{grid-template-columns:1fr;gap:48px}
+  .split-media{max-width:520px;margin-inline:auto 0;width:calc(100% - 26px)}
+  html[dir="rtl"] .split-media{margin-inline:0 auto}
+  .faq-side{position:static}
+  .faq-side .ph{display:none}
+}
+@media (max-width:370px){header .brand small{display:none}}
+@media (max-width:640px){
+  section{padding:76px 0}
+  .topbar{display:none}
+  .hero{min-height:auto}
+  .hero .wrap{padding-top:56px;padding-bottom:64px}
+  .hero::after{display:none}
+  .cta .btn{flex:1 1 100%}
+  .brand b{font-size:1.12rem}
+  .brand small{font-size:.7rem}
+  .lang{padding:7px 11px}
+  .brand img{width:42px;height:38px}
+  .nav{height:68px}
+  .links{top:68px}
+  .trust .wrap{grid-template-columns:1fr}
+  .t-item{border-inline-start:0!important;padding-inline-start:0;padding:18px 0}
+  .t-item:nth-child(n+2){border-top:1px solid var(--line)}
+  .svc-grid,.sec-grid,.row{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .badge{inset-inline-start:-10px;padding:12px 14px}
+  .split-media .ph.small{inset-inline-end:-14px}
+  form{padding:24px}
+  .f-grid{grid-template-columns:1fr}
+  .wa-float{bottom:84px;inset-inline-end:16px}
+  .wa-float .circle{width:56px;height:56px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;inset-inline:0;z-index:55;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -8px 24px -12px rgba(0,0,0,.25)}
+  .mbar .btn{padding:12px;font-size:.95rem}
+  body{padding-bottom:72px}
 }
 </style>
 </head>
 <body>
 
-<header>
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-4.1-3.6c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.5 14.5 0 0 0 5.6 4.9c2 .9 2.9 1 3.9.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.9L.1 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></g></symbol>
+  <symbol id="i-helmet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20M4 18v-3a8 8 0 0 1 16 0v3"/><path d="M10 7V4h4v3"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8"/></g></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-ruler" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17L17 3l4 4L7 21z"/><path d="M7 13l2 2M10 10l2 2M13 7l2 2"/></g></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></g></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2L20 3M16 7l3 3M14 9l2 2"/></g></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb">
+      <span><svg width="14" height="14"><use href="#i-pin"/></svg><span data-i18n="tbAddr">2nd Floor, Office No. 6, Azaiba, Muscat</span></span>
+      <span class="hide-m" data-i18n="tbHours">Sat – Thu · 8:00 AM – 6:00 PM</span>
+    </div>
+    <div class="tb">
+      <a href="tel:+96824231304"><span><svg width="14" height="14"><use href="#i-phone"/></svg><span class="ltr">+968 2423 1304</span></span></a>
+      <a href="https://wa.me/96877421246" target="_blank" rel="noopener" class="hide-m"><span><svg width="14" height="14"><use href="#i-wa"/></svg><span class="ltr">+968 7742 1246</span></span></a>
+    </div>
+  </div>
+</div>
+
+<header id="hdr">
   <nav class="wrap nav" aria-label="Main">
-    <a class="brand" href="#top">
-      <img src="assets/logo.svg" alt="" width="44" height="40">
-      <span><b data-i18n="brandName">Maulam Safnan</b><small data-i18n="brandSub">Trading &amp; Contracting · Oman</small></span>
+    <a class="brand" href="#top" aria-label="Maulam Safnan home">
+      <img src="assets/logo.svg" alt="" width="48" height="44">
+      <span><b>MAULAM SAFNAN</b><small>معالم صفنان للتجارة والمقاولات</small></span>
     </a>
     <ul class="links" id="links">
-      <li><a href="#about" data-i18n="navAbout">About</a></li>
       <li><a href="#services" data-i18n="navServices">Services</a></li>
       <li><a href="#why" data-i18n="navWhy">Why us</a></li>
+      <li><a href="#process" data-i18n="navProcess">How we work</a></li>
+      <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
       <li><a href="#contact" data-i18n="navContact">Contact</a></li>
     </ul>
-    <div style="display:flex;gap:8px;align-items:center">
+    <div class="nav-r">
       <button class="lang" id="langBtn" type="button" aria-label="Switch language">العربية</button>
+      <a class="btn btn-blue btn-sm btn-quote" href="#contact" data-i18n="navQuote">Get a free quote</a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 </header>
 
 <main id="top">
+
+<!-- HERO -->
 <section class="hero" style="padding:0">
+  <div class="hero-bg ph"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=70" alt="" fetchpriority="high"></div>
   <div class="wrap">
-    <div>
-      <span class="eyebrow" data-i18n="heroEyebrow">Sultanate of Oman · L.L.C.</span>
-      <h1 data-i18n="heroTitle">Maulam Safnan Trading &amp; Co. L.L.C.</h1>
-      <div class="alt" dir="auto" data-i18n="heroAlt">معالم صفنان للتجارة والمقاولات</div>
-      <p class="lead" data-i18n="heroLead">A registered Omani trading and contracting company delivering construction, plumbing and water works, and the materials behind them — with an experienced team on site across the Sultanate.</p>
+    <div class="hero-inner">
+      <span class="pill"><i>✓</i><span data-i18n="heroPill">Registered Omani L.L.C. · CR 1030567</span></span>
+      <h1 data-i18n="heroTitle">Build it right.<br><em>Plumb it right.</em><br>One trusted team.</h1>
+      <p class="lead" data-i18n="heroLead">Maulam Safnan Trading &amp; Co. delivers building contracting, plumbing &amp; water works and construction material supply across Oman — engineered, supplied and installed by one company, so your project moves faster and costs less.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="#contact" data-i18n="heroCta1">Request a quotation</a>
-        <a class="btn btn-ghost" href="tel:+96824231304"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span class="ltr">+968 2423 1304</span></a>
+        <a class="btn btn-wa" href="https://wa.me/96877421246?text=Hello%20Maulam%20Safnan%2C%20I%27d%20like%20a%20quotation%20for%20my%20project." target="_blank" rel="noopener"><svg width="20" height="20"><use href="#i-wa"/></svg><span data-i18n="ctaWa">WhatsApp for a quote</span></a>
+        <a class="btn btn-line" href="#services"><span data-i18n="ctaSvc">Explore our services</span><svg width="18" height="18" class="flip"><use href="#i-arrow"/></svg></a>
       </div>
-    </div>
-    <div class="hero-mark reveal">
-      <img src="assets/logo.svg" alt="Maulam Safnan logo" width="680" height="620">
-      <div class="reg"><span data-i18n="crLabel">Commercial Reg.</span><b class="ltr">CR 1030567</b></div>
+      <div class="hero-trust">
+        <span><svg width="18" height="18"><use href="#i-check"/></svg><span data-i18n="ht1">Free site visit &amp; quotation</span></span>
+        <span><svg width="18" height="18"><use href="#i-check"/></svg><span data-i18n="ht2">Supply + installation</span></span>
+        <span><svg width="18" height="18"><use href="#i-check"/></svg><span data-i18n="ht3">Engineer-supervised works</span></span>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="strip">
+<!-- TRUST BAR -->
+<div class="trust">
   <div class="wrap">
-    <div class="item"><small data-i18n="s1k">Head office</small><strong data-i18n="s1v">Azaiba, Muscat</strong></div>
-    <div class="item"><small data-i18n="s2k">Projects</small><strong data-i18n="s2v">Ash Sharqiyah North</strong></div>
-    <div class="item"><small data-i18n="s3k">Legal form</small><strong data-i18n="s3v">Limited Liability Co.</strong></div>
-    <div class="item"><small data-i18n="s4k">Call us</small><strong><a class="ltr" href="tel:+96893444555" style="text-decoration:none">+968 9344 4555</a></strong></div>
+    <div class="t-item"><div class="t-ic m"><svg width="22" height="22"><use href="#i-shield"/></svg></div><div><b data-i18n="tr1b">Licensed in Oman</b><small data-i18n="tr1s">Registered L.L.C., CR 1030567</small></div></div>
+    <div class="t-item"><div class="t-ic"><svg width="22" height="22"><use href="#i-helmet"/></svg></div><div><b data-i18n="tr2b">Engineers on site</b><small data-i18n="tr2s">Qualified project supervision</small></div></div>
+    <div class="t-item"><div class="t-ic m"><svg width="22" height="22"><use href="#i-box"/></svg></div><div><b data-i18n="tr3b">Materials in-house</b><small data-i18n="tr3s">Our own trading division</small></div></div>
+    <div class="t-item"><div class="t-ic"><svg width="22" height="22"><use href="#i-map"/></svg></div><div><b data-i18n="tr4b">Muscat to Sharqiyah</b><small data-i18n="tr4s">Projects across the Sultanate</small></div></div>
   </div>
 </div>
 
-<section id="about">
-  <div class="wrap about-grid">
-    <div class="reveal">
-      <span class="eyebrow dark" data-i18n="aboutEyebrow">About the company</span>
-      <div class="sec-head" style="margin-bottom:24px"><h2 data-i18n="aboutTitle">Trading and contracting, built on Omani ground.</h2></div>
-      <p data-i18n="aboutP1">Maulam Safnan Trading &amp; Co. L.L.C. is a commercial business entity registered in the Sultanate of Oman as a Limited Liability Company under Omani corporate regulations.</p>
-      <p data-i18n="aboutP2">The company works in two connected fields — commercial trading and project contracting. Our project engineers and technical staff oversee works on site, while our trading arm supplies the materials projects depend on.</p>
-      <p data-i18n="aboutP3">Our head office is in Azaiba, Muscat, and our project presence has included Ibra (Sifalat Ibra) in the Ash Sharqiyah North Governorate.</p>
-    </div>
-    <div class="facts reveal">
-      <dl>
-        <dt data-i18n="fName">Registered name</dt><dd dir="auto" data-i18n="fNameV">Maulam Safnan Trading &amp; Co. L.L.C.</dd>
-        <dt data-i18n="fNameAr">Arabic name</dt><dd>معالم صفنان للتجارة والمقاولات</dd>
-        <dt data-i18n="fCR">Commercial Registration</dt><dd class="ltr">1030567</dd>
-        <dt data-i18n="fType">Company type</dt><dd data-i18n="fTypeV">Limited Liability Company (L.L.C.)</dd>
-        <dt data-i18n="fAct">Activities</dt><dd data-i18n="fActV">Commercial trading &amp; project contracting</dd>
-        <dt data-i18n="fAddr">Office</dt><dd data-i18n="fAddrV">2nd Floor, Office No. 6, Azaiba</dd>
-        <dt data-i18n="fPO">Postal address</dt><dd data-i18n="fPOV">P.O. Box 1828, Postal Code 130</dd>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="services">
+<!-- SERVICES -->
+<section id="services">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow dark" data-i18n="svcEyebrow">What we do</span>
-      <h2 data-i18n="svcTitle">Services</h2>
-      <p data-i18n="svcLead">From supply to site handover, one company handles the materials and the work.</p>
+      <span class="eyebrow" data-i18n="svcEyebrow">Our services</span>
+      <h2 data-i18n="svcTitle">Everything your project needs, under one roof</h2>
+      <p data-i18n="svcLead">From the first drawing to the final handover, our teams handle the construction, the plumbing and the materials — so you deal with one company, one schedule and one invoice.</p>
     </div>
     <div class="svc-grid">
       <article class="svc reveal">
-        <div class="ic m"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
-        <h3 data-i18n="sv1t">Building &amp; civil contracting</h3>
-        <p data-i18n="sv1p">Construction works for residential, commercial and government projects, managed by qualified project engineers.</p>
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=800&q=70" alt="Concrete building under construction"><span class="num">01</span></div>
+        <div class="svc-body">
+          <h3 data-i18n="sv1t">Building &amp; Civil Contracting</h3>
+          <p data-i18n="sv1p">Villas, commercial buildings and government projects built to specification and on schedule.</p>
+          <ul data-i18n="sv1l"><li>Structural &amp; civil works</li><li>Extensions &amp; renovations</li><li>Finishing works</li></ul>
+          <a class="more" href="#contact" data-svc="sv1t"><span data-i18n="more">Get a quote</span><svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal d1">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?auto=format&fit=crop&w=800&q=70" alt="Plumber working on pipes in a wall"><span class="num">02</span></div>
+        <div class="svc-body">
+          <h3 data-i18n="sv2t">Plumbing &amp; Water Works</h3>
+          <p data-i18n="sv2p">Complete water supply and drainage systems for homes, buildings and project sites.</p>
+          <ul data-i18n="sv2l"><li>Water supply &amp; drainage networks</li><li>Tanks, pumps &amp; fixtures</li><li>Testing &amp; commissioning</li></ul>
+          <a class="more" href="#contact" data-svc="sv2t"><span data-i18n="more">Get a quote</span><svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal d2">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1586057285471-2f78bffaf074?auto=format&fit=crop&w=800&q=70" alt="Blue and white metal pipes"><span class="num">03</span></div>
+        <div class="svc-body">
+          <h3 data-i18n="sv3t">Building Materials Trading</h3>
+          <p data-i18n="sv3p">Reliable supply of construction materials, pipes and fittings — delivered to your site.</p>
+          <ul data-i18n="sv3l"><li>Pipes, valves &amp; fittings</li><li>Construction materials</li><li>Bulk orders for contractors</li></ul>
+          <a class="more" href="#contact" data-svc="sv3t"><span data-i18n="more">Get a quote</span><svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
       </article>
       <article class="svc reveal">
-        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.7s-6 6.6-6 11.3a6 6 0 0 0 12 0c0-4.7-6-11.3-6-11.3z"/></svg></div>
-        <h3 data-i18n="sv2t">Plumbing &amp; water works</h3>
-        <p data-i18n="sv2p">Water supply and drainage piping, fixtures and installation for buildings and project sites.</p>
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1749532125405-70950966b0e5?auto=format&fit=crop&w=800&q=70" alt="Plumber repairing bathroom plumbing"><span class="num">04</span></div>
+        <div class="svc-body">
+          <h3 data-i18n="sv4t">Maintenance &amp; Repairs</h3>
+          <p data-i18n="sv4p">Fast, dependable maintenance that keeps buildings and plumbing systems running.</p>
+          <ul data-i18n="sv4l"><li>Leak detection &amp; repair</li><li>Planned maintenance contracts</li><li>Upgrades &amp; replacements</li></ul>
+          <a class="more" href="#contact" data-svc="sv4t"><span data-i18n="more">Get a quote</span><svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
       </article>
-      <article class="svc reveal">
-        <div class="ic m"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8"/></svg></div>
-        <h3 data-i18n="sv3t">General trading</h3>
-        <p data-i18n="sv3p">Sourcing and supply of construction materials, pipes, fittings and building products.</p>
+      <article class="svc reveal d1">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=70" alt="Engineer working on drawings"><span class="num">05</span></div>
+        <div class="svc-body">
+          <h3 data-i18n="sv5t">Project Management</h3>
+          <p data-i18n="sv5p">Planning, scheduling and supervision by project engineers who keep you informed.</p>
+          <ul data-i18n="sv5l"><li>Planning &amp; scheduling</li><li>On-site supervision</li><li>Quality &amp; safety control</li></ul>
+          <a class="more" href="#contact" data-svc="sv5t"><span data-i18n="more">Get a quote</span><svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
       </article>
-      <article class="svc reveal">
-        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z"/></svg></div>
-        <h3 data-i18n="sv4t">Maintenance works</h3>
-        <p data-i18n="sv4p">Repair and upkeep of building services and plumbing systems after handover.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="ic m"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></div>
-        <h3 data-i18n="sv5t">Project management</h3>
-        <p data-i18n="sv5p">Planning, scheduling and on-site supervision to keep works on time and to specification.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 3.1a4 4 0 0 1 0 7.8M22 21v-2a4 4 0 0 0-3-3.9"/></svg></div>
-        <h3 data-i18n="sv6t">Technical manpower</h3>
-        <p data-i18n="sv6p">Local and technical personnel, engineers and skilled trades for regional operations.</p>
+      <article class="svc reveal d2">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=70" alt="Construction team in safety gear"><span class="num">06</span></div>
+        <div class="svc-body">
+          <h3 data-i18n="sv6t">Technical Manpower</h3>
+          <p data-i18n="sv6p">Skilled technicians, engineers and trades ready to strengthen your project team.</p>
+          <ul data-i18n="sv6l"><li>Engineers &amp; supervisors</li><li>Plumbers &amp; technicians</li><li>Skilled construction trades</li></ul>
+          <a class="more" href="#contact" data-svc="sv6t"><span data-i18n="more">Get a quote</span><svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="why">
+<!-- WHY / SPLIT -->
+<section id="why" class="split">
+  <div class="wrap split-grid">
+    <div class="split-media reveal">
+      <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?auto=format&fit=crop&w=900&q=70" alt="Construction worker in hard hat on building frame"></div>
+      <div class="ph small"><img loading="lazy" src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=500&q=70" alt="Metal pipe installation"></div>
+      <div class="badge"><b data-i18n="badgeB">Supply + Install</b><small data-i18n="badgeS">One contract. One point of contact.</small></div>
+    </div>
+    <div class="reveal d1">
+      <span class="eyebrow" data-i18n="whyEyebrow">Why clients choose us</span>
+      <h2 class="h2" data-i18n="whyTitle">Fewer suppliers. Fewer delays. Better results.</h2>
+      <p class="lead" data-i18n="whyLead">Because we trade the materials and do the work ourselves, there's no waiting on third parties and no finger-pointing. You get a single accountable team from quotation to handover.</p>
+      <ul class="checks">
+        <li><span class="ck"><svg width="14" height="14"><use href="#i-check"/></svg></span><div><b data-i18n="c1b">Competitive, transparent pricing</b><span data-i18n="c1s">Direct material sourcing means clear quotations with no hidden markups.</span></div></li>
+        <li><span class="ck"><svg width="14" height="14"><use href="#i-check"/></svg></span><div><b data-i18n="c2b">On time, every stage</b><span data-i18n="c2s">Materials and crews are scheduled together, so the site never sits idle.</span></div></li>
+        <li><span class="ck"><svg width="14" height="14"><use href="#i-check"/></svg></span><div><b data-i18n="c3b">Engineer-led quality</b><span data-i18n="c3s">Project engineers supervise every job and sign off each stage.</span></div></li>
+        <li><span class="ck"><svg width="14" height="14"><use href="#i-check"/></svg></span><div><b data-i18n="c4b">Local and accountable</b><span data-i18n="c4s">A registered Omani company with an office you can visit in Azaiba.</span></div></li>
+      </ul>
+      <div class="cta" style="margin-top:0">
+        <a class="btn btn-dark" href="#contact"><span data-i18n="whyCta">Book a free site visit</span><svg width="18" height="18" class="flip"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="pEyebrow">How we work</span>
+      <h2 data-i18n="pTitle">From first call to handover in 5 clear steps</h2>
+      <p data-i18n="pLead">A simple, transparent process so you always know what happens next.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="dot"><svg width="24" height="24"><use href="#i-chat"/></svg></div><h3 data-i18n="p1t">Contact us</h3><p data-i18n="p1p">Message us on WhatsApp or call with your requirements.</p></div>
+      <div class="step reveal d1"><div class="dot"><svg width="24" height="24"><use href="#i-ruler"/></svg></div><h3 data-i18n="p2t">Site visit</h3><p data-i18n="p2p">Our engineer visits, measures and understands the scope.</p></div>
+      <div class="step reveal d2"><div class="dot"><svg width="24" height="24"><use href="#i-file"/></svg></div><h3 data-i18n="p3t">Clear quotation</h3><p data-i18n="p3p">A detailed, itemised quotation — no surprises later.</p></div>
+      <div class="step reveal d3"><div class="dot"><svg width="24" height="24"><use href="#i-tool"/></svg></div><h3 data-i18n="p4t">Supply &amp; build</h3><p data-i18n="p4p">We deliver materials and execute under engineer supervision.</p></div>
+      <div class="step reveal d4"><div class="dot"><svg width="24" height="24"><use href="#i-key"/></svg></div><h3 data-i18n="p5t">Handover</h3><p data-i18n="p5p">Testing, inspection and handover — with after-sales support.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section class="sectors">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow dark" data-i18n="whyEyebrow">Why work with us</span>
-      <h2 data-i18n="whyTitle">One partner for supply and site.</h2>
+      <span class="eyebrow" data-i18n="seEyebrow">Who we serve</span>
+      <h2 data-i18n="seTitle">Trusted by homeowners, developers and institutions</h2>
+      <p data-i18n="seLead">Whatever the size of the job, we bring the same engineering discipline and care.</p>
     </div>
-    <div class="why-grid reveal">
-      <div class="why"><span>01</span><h3 data-i18n="w1t">Registered in Oman</h3><p data-i18n="w1p">A licensed L.L.C. operating under Omani regulations.</p></div>
-      <div class="why"><span>02</span><h3 data-i18n="w2t">Engineers on site</h3><p data-i18n="w2p">Project engineers oversee quality and progress directly.</p></div>
-      <div class="why"><span>03</span><h3 data-i18n="w3t">Materials in-house</h3><p data-i18n="w3p">Our trading arm shortens supply chains and lead times.</p></div>
-      <div class="why"><span>04</span><h3 data-i18n="w4t">Regional reach</h3><p data-i18n="w4p">From Muscat to Ash Sharqiyah North and beyond.</p></div>
-    </div>
-    <div class="areas">
-      <div class="area a1 reveal"><small data-i18n="ar1k">Head office</small><h3 data-i18n="ar1t">Azaiba, Muscat</h3><p data-i18n="ar1p">Administration, trading and client services.</p></div>
-      <div class="area a2 reveal"><small data-i18n="ar2k">Project presence</small><h3 data-i18n="ar2t">Ibra · Ash Sharqiyah North</h3><p data-i18n="ar2p">Site operations including Sifalat Ibra.</p></div>
+    <div class="sec-grid">
+      <div class="sector reveal"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1595414440701-da000c40df9c?auto=format&fit=crop&w=700&q=70" alt=""></div><div class="t"><h3 data-i18n="se1t">Villas &amp; Homes</h3><p data-i18n="se1p">New builds, extensions, plumbing and renovations.</p></div></div>
+      <div class="sector reveal d1"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=700&q=70" alt=""></div><div class="t"><h3 data-i18n="se2t">Developers &amp; Contractors</h3><p data-i18n="se2p">Subcontracting, material supply and manpower.</p></div></div>
+      <div class="sector reveal d2"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1606813332135-228593b6e201?auto=format&fit=crop&w=700&q=70" alt=""></div><div class="t"><h3 data-i18n="se3t">Government &amp; Institutions</h3><p data-i18n="se3p">Public buildings and infrastructure works.</p></div></div>
+      <div class="sector reveal d3"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1558464678-2f1570e8d60e?auto=format&fit=crop&w=700&q=70" alt=""></div><div class="t"><h3 data-i18n="se4t">Commercial &amp; Retail</h3><p data-i18n="se4p">Offices, shops and fit-outs delivered with minimal downtime.</p></div></div>
     </div>
   </div>
 </section>
 
+<!-- CTA BAND -->
+<div class="band">
+  <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?auto=format&fit=crop&w=1800&q=60" alt=""></div>
+  <div class="wrap">
+    <div class="reveal">
+      <h2 data-i18n="bTitle">Planning a project? Get your quotation today.</h2>
+      <p data-i18n="bLead">Send us your drawings or a few photos on WhatsApp — we'll reply quickly with next steps.</p>
+    </div>
+    <div class="cta reveal d1">
+      <a class="btn btn-wa" href="https://wa.me/96877421246?text=Hello%20Maulam%20Safnan%2C%20I%27d%20like%20a%20quotation%20for%20my%20project." target="_blank" rel="noopener"><svg width="20" height="20"><use href="#i-wa"/></svg><span class="ltr">+968 7742 1246</span></a>
+      <a class="btn btn-line" href="tel:+96893444555"><svg width="18" height="18"><use href="#i-phone"/></svg><span data-i18n="callNow">Call now</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side reveal">
+      <span class="eyebrow" data-i18n="fqEyebrow">FAQ</span>
+      <h2 class="h2" data-i18n="fqTitle">Questions clients ask us</h2>
+      <p style="color:var(--muted)" data-i18n="fqLead">Can't find your answer? Message us on WhatsApp and we'll help right away.</p>
+      <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=70" alt=""></div>
+    </div>
+    <div class="reveal d1">
+      <details open><summary><span data-i18n="q1">Which areas of Oman do you cover?</span><span class="pm"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p data-i18n="a1">Our head office is in Azaiba, Muscat, and we carry out projects across the Sultanate — including Ash Sharqiyah North, where we have worked in Ibra. Contact us with your location and we'll confirm.</p></details>
+      <details><summary><span data-i18n="q2">Do you charge for a site visit or quotation?</span><span class="pm"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p data-i18n="a2">No. We visit your site, assess the scope and send a detailed quotation free of charge.</p></details>
+      <details><summary><span data-i18n="q3">Can you supply materials only, without installation?</span><span class="pm"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p data-i18n="a3">Yes. Our trading division supplies pipes, fittings and construction materials to contractors and individuals, with delivery to site.</p></details>
+      <details><summary><span data-i18n="q4">Do you take small jobs as well as large projects?</span><span class="pm"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p data-i18n="a4">Yes — from plumbing repairs and renovations to full building and infrastructure projects.</p></details>
+      <details><summary><span data-i18n="q5">Are you a registered company?</span><span class="pm"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p data-i18n="a5">Yes. Maulam Safnan Trading &amp; Co. L.L.C. is a Limited Liability Company registered in the Sultanate of Oman, Commercial Registration No. 1030567.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow" data-i18n="cEyebrow">Get in touch</span>
-      <h2 data-i18n="cTitle">Let's discuss your project.</h2>
-      <p data-i18n="cLead">Visit our office in Azaiba, call us, or send a message and we'll get back to you.</p>
+      <span class="eyebrow" data-i18n="ctEyebrow">Contact us</span>
+      <h2 data-i18n="ctTitle">Let's build something great together</h2>
+      <p data-i18n="ctLead">Tell us about your project and get a free quotation. Prefer to talk? Call or visit our office in Azaiba.</p>
     </div>
     <div class="c-grid">
-      <div class="c-cards">
-        <a class="c-card" href="tel:+96893444555"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><div><small data-i18n="cGsm">Mobile (GSM)</small><strong class="ltr">+968 9344 4555</strong></div></a>
-        <a class="c-card" href="tel:+96824231304"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div><div><small data-i18n="cTel">Telephone</small><strong class="ltr">+968 2423 1304</strong></div></a>
-        <a class="c-card" href="https://wa.me/96893444555" target="_blank" rel="noopener"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></div><div><small>WhatsApp</small><strong data-i18n="cWa">Chat with us</strong></div></a>
-        <div class="c-card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><small data-i18n="cAddrK">Office address</small><strong data-i18n="cAddrV">2nd Floor, Office No. 6, Azaiba, Muscat</strong><small data-i18n="cPO" style="margin-top:4px">P.O. Box 1828 · Postal Code 130 · Sultanate of Oman</small></div></div>
+      <div class="office reveal">
+        <div class="ph"><img src="assets/office-sign.jpg" alt="Maulam Safnan office sign, 2nd floor office 6, Azaiba"></div>
+        <div class="office-body">
+          <h3 data-i18n="ofT">Visit our office</h3>
+          <p data-i18n="ofP">2nd Floor, Office No. 6, Azaiba, Muscat · P.O. Box 1828, Postal Code 130</p>
+          <div class="c-list">
+            <a class="c-row" href="https://wa.me/96877421246" target="_blank" rel="noopener"><span class="ic wa"><svg width="20" height="20"><use href="#i-wa"/></svg></span><span><small>WhatsApp</small><strong class="ltr">+968 7742 1246</strong></span></a>
+            <a class="c-row" href="tel:+96893444555"><span class="ic"><svg width="18" height="18"><use href="#i-phone"/></svg></span><span><small data-i18n="lGsm">Mobile</small><strong class="ltr">+968 9344 4555</strong></span></a>
+            <a class="c-row" href="tel:+96824231304"><span class="ic"><svg width="18" height="18"><use href="#i-phone"/></svg></span><span><small data-i18n="lTel">Office telephone</small><strong class="ltr">+968 2423 1304</strong></span></a>
+          </div>
+        </div>
       </div>
-      <form id="qform" class="reveal">
-        <h3 data-i18n="fTitle">Request a quotation</h3>
+      <form id="qform" class="reveal d1">
+        <h3 data-i18n="fmT">Request your free quotation</h3>
+        <p class="sub" data-i18n="fmS">Fill this in and it opens WhatsApp with your details ready to send.</p>
         <div class="row">
           <label><span data-i18n="fN">Full name</span><input name="name" required autocomplete="name"></label>
-          <label><span data-i18n="fP">Phone</span><input name="phone" type="tel" required autocomplete="tel" dir="ltr"></label>
+          <label><span data-i18n="fP">Phone</span><input name="phone" type="tel" required autocomplete="tel" dir="ltr" placeholder="+968"></label>
         </div>
-        <label><span data-i18n="fS">Service needed</span>
-          <select name="service">
-            <option data-i18n="sv1t">Building &amp; civil contracting</option>
-            <option data-i18n="sv2t">Plumbing &amp; water works</option>
-            <option data-i18n="sv3t">General trading</option>
-            <option data-i18n="sv4t">Maintenance works</option>
-            <option data-i18n="fOther">Other</option>
-          </select>
-        </label>
-        <label><span data-i18n="fM">Project details</span><textarea name="msg" required></textarea></label>
-        <button class="btn btn-primary" type="submit"><span data-i18n="fSend">Send via WhatsApp</span></button>
-        <p class="note" data-i18n="fNote">Your message opens in WhatsApp, addressed to our office.</p>
+        <div class="row">
+          <label><span data-i18n="fS">Service</span>
+            <select name="service" id="svcSel">
+              <option value="sv1t" data-i18n="sv1t">Building &amp; Civil Contracting</option>
+              <option value="sv2t" data-i18n="sv2t">Plumbing &amp; Water Works</option>
+              <option value="sv3t" data-i18n="sv3t">Building Materials Trading</option>
+              <option value="sv4t" data-i18n="sv4t">Maintenance &amp; Repairs</option>
+              <option value="sv5t" data-i18n="sv5t">Project Management</option>
+              <option value="sv6t" data-i18n="sv6t">Technical Manpower</option>
+            </select>
+          </label>
+          <label><span data-i18n="fL">Project location</span><input name="loc" data-ph="fLph" placeholder="e.g. Seeb, Muscat"></label>
+        </div>
+        <label><span data-i18n="fM">Project details</span><textarea name="msg" required data-ph="fMph" placeholder="Briefly describe the work, size and timeline…"></textarea></label>
+        <button class="btn btn-wa" type="submit"><svg width="20" height="20"><use href="#i-wa"/></svg><span data-i18n="fSend">Send on WhatsApp</span></button>
+        <p class="note" data-i18n="fNote">We usually reply within working hours on the same day.</p>
       </form>
     </div>
     <div class="map reveal">
-      <iframe title="Azaiba, Muscat" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Azaiba,+Muscat,+Oman&output=embed"></iframe>
+      <a href="https://www.google.com/maps/search/?api=1&query=Azaiba+Muscat+Oman" target="_blank" rel="noopener"><span><svg width="18" height="18" style="vertical-align:-3px"><use href="#i-pin"/></svg> <span data-i18n="mapOpen">Open Azaiba, Muscat in Google Maps</span></span></a>
+      <iframe title="Map: Azaiba, Muscat" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Azaiba,+Muscat,+Oman&output=embed"></iframe>
     </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">
-    <a class="brand" href="#top"><img src="assets/logo.svg" alt="" width="40" height="36"><span><b data-i18n="footName">Maulam Safnan Trading &amp; Co. L.L.C.</b></span></a>
-    <span><span data-i18n="footCR">CR No.</span> <span class="ltr">1030567</span> · © <span id="yr"></span> <span data-i18n="footRights">All rights reserved.</span></span>
+  <div class="wrap f-grid">
+    <div>
+      <a class="brand" href="#top"><img src="assets/logo.svg" alt="" width="52" height="48"><span><b>MAULAM SAFNAN</b><small>معالم صفنان للتجارة والمقاولات</small></span></a>
+      <p class="about" data-i18n="ftAbout">Building contracting, plumbing &amp; water works and building materials trading across the Sultanate of Oman.</p>
+    </div>
+    <div>
+      <h4 data-i18n="ftSvc">Services</h4>
+      <ul>
+        <li><a href="#services" data-i18n="sv1t">Building &amp; Civil Contracting</a></li>
+        <li><a href="#services" data-i18n="sv2t">Plumbing &amp; Water Works</a></li>
+        <li><a href="#services" data-i18n="sv3t">Building Materials Trading</a></li>
+        <li><a href="#services" data-i18n="sv4t">Maintenance &amp; Repairs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="ftCo">Company</h4>
+      <ul>
+        <li><a href="#why" data-i18n="navWhy">Why us</a></li>
+        <li><a href="#process" data-i18n="navProcess">How we work</a></li>
+        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="ftCt">Get in touch</h4>
+      <ul>
+        <li><a href="https://wa.me/96877421246" target="_blank" rel="noopener">WhatsApp: <span class="ltr">+968 7742 1246</span></a></li>
+        <li><a href="tel:+96893444555">GSM: <span class="ltr">+968 9344 4555</span></a></li>
+        <li><a href="tel:+96824231304">Tel: <span class="ltr">+968 2423 1304</span></a></li>
+        <li data-i18n="ftAddr">2nd Floor, Office 6, Azaiba · P.O. Box 1828, PC 130</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap f-bottom">
+    <span>© <span id="yr"></span> <span data-i18n="ftName">Maulam Safnan Trading &amp; Co. L.L.C.</span> · <span data-i18n="ftCR">CR No.</span> <span class="ltr">1030567</span></span>
+    <span data-i18n="ftRights">All rights reserved.</span>
   </div>
 </footer>
 
+<!-- Floating WhatsApp -->
+<a class="wa-float" id="waFloat" href="https://wa.me/96877421246?text=Hello%20Maulam%20Safnan%2C%20I%27d%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp +968 7742 1246">
+  <span class="bubble" data-i18n="waTip">Need a quote? Chat with us 👋</span>
+  <span class="circle"><svg width="32" height="32" style="color:#fff"><use href="#i-wa"/></svg></span>
+</a>
+
+<!-- Mobile action bar -->
+<div class="mbar">
+  <a class="btn btn-dark" href="tel:+96893444555"><svg width="18" height="18"><use href="#i-phone"/></svg><span data-i18n="callNow">Call now</span></a>
+  <a class="btn btn-wa" href="https://wa.me/96877421246" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
 <script>
+const WA = '96877421246';
 const AR = {
-  brandName:"معالم صفنان", brandSub:"للتجارة والمقاولات · عُمان",
-  navAbout:"من نحن", navServices:"خدماتنا", navWhy:"لماذا نحن", navContact:"اتصل بنا",
-  heroEyebrow:"سلطنة عُمان · ش.م.م", heroTitle:"معالم صفنان للتجارة والمقاولات ش.م.م", heroAlt:"Maulam Safnan Trading & Co. L.L.C.",
-  heroLead:"شركة عُمانية مسجلة في مجالي التجارة والمقاولات، تنفّذ أعمال البناء والسباكة والمياه وتوفّر المواد اللازمة لها، بفريق ذي خبرة في مواقع المشاريع في أنحاء السلطنة.",
-  heroCta1:"اطلب عرض سعر", crLabel:"السجل التجاري",
-  s1k:"المكتب الرئيسي", s1v:"العذيبة، مسقط", s2k:"المشاريع", s2v:"شمال الشرقية", s3k:"الشكل القانوني", s3v:"شركة محدودة المسؤولية", s4k:"اتصل بنا",
-  aboutEyebrow:"عن الشركة", aboutTitle:"تجارة ومقاولات على أرض عُمانية.",
-  aboutP1:"شركة معالم صفنان للتجارة والمقاولات ش.م.م كيان تجاري مسجّل في سلطنة عُمان كشركة محدودة المسؤولية وفق أنظمة الشركات العُمانية.",
-  aboutP2:"تعمل الشركة في مجالين مترابطين: التجارة العامة ومقاولات المشاريع. يشرف مهندسو المشاريع والكوادر الفنية على الأعمال في المواقع، بينما يوفّر قسم التجارة المواد التي تحتاجها المشاريع.",
-  aboutP3:"يقع مكتبنا الرئيسي في العذيبة بمسقط، وقد شمل حضورنا في المشاريع ولاية إبراء (سفالة إبراء) في محافظة شمال الشرقية.",
-  fName:"الاسم المسجّل", fNameV:"Maulam Safnan Trading & Co. L.L.C.", fNameAr:"الاسم بالعربية", fCR:"رقم السجل التجاري", fType:"نوع الشركة", fTypeV:"شركة محدودة المسؤولية (ش.م.م)",
-  fAct:"الأنشطة", fActV:"التجارة العامة ومقاولات المشاريع", fAddr:"المكتب", fAddrV:"الدور الثاني، مكتب رقم ٦، العذيبة", fPO:"العنوان البريدي", fPOV:"ص.ب ١٨٢٨، الرمز البريدي ١٣٠",
-  svcEyebrow:"ماذا نقدّم", svcTitle:"خدماتنا", svcLead:"من التوريد إلى تسليم الموقع، شركة واحدة تتولّى المواد والأعمال.",
-  sv1t:"مقاولات المباني والأعمال المدنية", sv1p:"أعمال إنشائية للمشاريع السكنية والتجارية والحكومية بإدارة مهندسين مؤهلين.",
-  sv2t:"أعمال السباكة والمياه", sv2p:"تمديدات شبكات المياه والصرف والتركيبات الصحية للمباني ومواقع المشاريع.",
-  sv3t:"التجارة العامة", sv3p:"توفير وتوريد مواد البناء والأنابيب والقطع والمنتجات الإنشائية.",
-  sv4t:"أعمال الصيانة", sv4p:"إصلاح وصيانة خدمات المباني وأنظمة السباكة بعد التسليم.",
-  sv5t:"إدارة المشاريع", sv5p:"التخطيط والجدولة والإشراف الميداني لإنجاز الأعمال في وقتها ووفق المواصفات.",
-  sv6t:"الكوادر الفنية", sv6p:"كوادر محلية وفنية ومهندسون وحِرفيون مهرة للعمليات في المنطقة.",
-  whyEyebrow:"لماذا تتعامل معنا", whyTitle:"شريك واحد للتوريد والتنفيذ.",
-  w1t:"مسجّلة في عُمان", w1p:"شركة ش.م.م مرخّصة تعمل وفق الأنظمة العُمانية.",
-  w2t:"مهندسون في الموقع", w2p:"يشرف مهندسو المشاريع مباشرة على الجودة وسير العمل.",
-  w3t:"المواد من داخل الشركة", w3p:"يختصر قسم التجارة سلاسل التوريد ومدد التسليم.",
-  w4t:"انتشار إقليمي", w4p:"من مسقط إلى شمال الشرقية وما بعدها.",
-  ar1k:"المكتب الرئيسي", ar1t:"العذيبة، مسقط", ar1p:"الإدارة والتجارة وخدمة العملاء.",
-  ar2k:"حضور المشاريع", ar2t:"إبراء · شمال الشرقية", ar2p:"عمليات ميدانية تشمل سفالة إبراء.",
-  cEyebrow:"تواصل معنا", cTitle:"لنناقش مشروعك.", cLead:"زورونا في مكتبنا بالعذيبة، أو اتصلوا بنا، أو أرسلوا رسالة وسنعود إليكم.",
-  cGsm:"الهاتف النقال", cTel:"الهاتف", cWa:"تحدّث معنا", cAddrK:"عنوان المكتب", cAddrV:"الدور الثاني، مكتب رقم ٦، العذيبة، مسقط", cPO:"ص.ب ١٨٢٨ · الرمز البريدي ١٣٠ · سلطنة عُمان",
-  fTitle:"اطلب عرض سعر", fN:"الاسم الكامل", fP:"رقم الهاتف", fS:"الخدمة المطلوبة", fM:"تفاصيل المشروع", fOther:"أخرى", fSend:"أرسل عبر واتساب", fNote:"تُفتح رسالتك في واتساب موجّهة إلى مكتبنا.",
-  footName:"معالم صفنان للتجارة والمقاولات ش.م.م", footCR:"رقم السجل التجاري", footRights:"جميع الحقوق محفوظة."
+  tbAddr:"الدور الثاني، مكتب رقم ٦، العذيبة، مسقط", tbHours:"السبت – الخميس · ٨ صباحاً – ٦ مساءً",
+  navServices:"خدماتنا", navWhy:"لماذا نحن", navProcess:"آلية العمل", navFaq:"الأسئلة الشائعة", navContact:"اتصل بنا", navQuote:"اطلب عرض سعر مجاني",
+  heroPill:"شركة عُمانية مسجّلة ش.م.م · س.ت ١٠٣٠٥٦٧",
+  heroTitle:"نبني بإتقان.<br><em>ونمدّ المياه بإحكام.</em><br>فريق واحد تثق به.",
+  heroLead:"تقدّم معالم صفنان للتجارة والمقاولات أعمال مقاولات المباني والسباكة وشبكات المياه وتوريد مواد البناء في أنحاء سلطنة عُمان — تصميماً وتوريداً وتركيباً من شركة واحدة، ليُنجَز مشروعك أسرع وبتكلفة أقل.",
+  ctaWa:"اطلب عرض سعر عبر واتساب", ctaSvc:"تعرّف على خدماتنا",
+  ht1:"زيارة موقع وعرض سعر مجاناً", ht2:"توريد + تركيب", ht3:"أعمال بإشراف هندسي",
+  tr1b:"مرخّصة في عُمان", tr1s:"شركة ش.م.م، سجل تجاري ١٠٣٠٥٦٧", tr2b:"مهندسون في الموقع", tr2s:"إشراف مؤهّل على المشاريع", tr3b:"المواد من عندنا", tr3s:"قسم تجاري خاص بنا", tr4b:"من مسقط إلى الشرقية", tr4s:"مشاريع في أنحاء السلطنة",
+  svcEyebrow:"خدماتنا", svcTitle:"كل ما يحتاجه مشروعك تحت سقف واحد",
+  svcLead:"من أول مخطط حتى التسليم النهائي، تتولّى فرقنا البناء والسباكة والمواد — لتتعامل مع شركة واحدة وجدول واحد وفاتورة واحدة.",
+  sv1t:"مقاولات المباني والأعمال المدنية", sv1p:"فلل ومبانٍ تجارية ومشاريع حكومية تُنفّذ وفق المواصفات وفي الموعد.", sv1l:"<li>الأعمال الإنشائية والمدنية</li><li>التوسعات والترميم</li><li>أعمال التشطيبات</li>",
+  sv2t:"أعمال السباكة والمياه", sv2p:"أنظمة متكاملة لتوصيل المياه والصرف للمنازل والمباني ومواقع المشاريع.", sv2l:"<li>شبكات المياه والصرف</li><li>الخزانات والمضخات والأدوات الصحية</li><li>الاختبار والتشغيل</li>",
+  sv3t:"تجارة مواد البناء", sv3p:"توريد موثوق لمواد البناء والأنابيب والقطع — مع التوصيل إلى موقعك.", sv3l:"<li>الأنابيب والصمامات والقطع</li><li>مواد البناء</li><li>طلبات الجملة للمقاولين</li>",
+  sv4t:"الصيانة والإصلاحات", sv4p:"صيانة سريعة وموثوقة تحافظ على كفاءة المباني وأنظمة السباكة.", sv4l:"<li>كشف التسربات وإصلاحها</li><li>عقود الصيانة الدورية</li><li>التحديث والاستبدال</li>",
+  sv5t:"إدارة المشاريع", sv5p:"تخطيط وجدولة وإشراف من مهندسين يُبقونك على اطلاع دائم.", sv5l:"<li>التخطيط والجدولة</li><li>الإشراف الميداني</li><li>ضبط الجودة والسلامة</li>",
+  sv6t:"الكوادر الفنية", sv6p:"فنيون ومهندسون وحِرفيون مهرة جاهزون لدعم فريق مشروعك.", sv6l:"<li>مهندسون ومشرفون</li><li>سبّاكون وفنيون</li><li>حِرفيو البناء المهرة</li>",
+  more:"اطلب عرض سعر",
+  badgeB:"توريد + تركيب", badgeS:"عقد واحد. جهة تواصل واحدة.",
+  whyEyebrow:"لماذا يختارنا العملاء", whyTitle:"موردون أقل. تأخير أقل. نتائج أفضل.",
+  whyLead:"لأننا نتاجر بالمواد وننفّذ العمل بأنفسنا، لا انتظار لأطراف أخرى ولا تبادل للّوم. تحصل على فريق واحد مسؤول من عرض السعر حتى التسليم.",
+  c1b:"أسعار تنافسية وواضحة", c1s:"التوريد المباشر للمواد يعني عروض أسعار واضحة دون هوامش مخفية.",
+  c2b:"الالتزام بالمواعيد في كل مرحلة", c2s:"نجدول المواد والفرق معاً، فلا يتوقف العمل في الموقع.",
+  c3b:"جودة بقيادة هندسية", c3s:"يشرف مهندسو المشاريع على كل عمل ويعتمدون كل مرحلة.",
+  c4b:"شركة محلية مسؤولة", c4s:"شركة عُمانية مسجّلة بمكتب يمكنك زيارته في العذيبة.",
+  whyCta:"احجز زيارة موقع مجانية",
+  pEyebrow:"آلية العمل", pTitle:"من أول اتصال حتى التسليم في ٥ خطوات واضحة", pLead:"آلية بسيطة وشفافة لتعرف دائماً ما هي الخطوة التالية.",
+  p1t:"تواصل معنا", p1p:"راسلنا عبر واتساب أو اتصل بنا بمتطلباتك.", p2t:"زيارة الموقع", p2p:"يزور مهندسنا الموقع ويأخذ القياسات ويحدد نطاق العمل.",
+  p3t:"عرض سعر واضح", p3p:"عرض سعر مفصّل بنداً بنداً — بلا مفاجآت لاحقاً.", p4t:"التوريد والتنفيذ", p4p:"نورّد المواد وننفّذ الأعمال بإشراف هندسي.",
+  p5t:"التسليم", p5p:"اختبار وفحص وتسليم — مع دعم ما بعد التسليم.",
+  seEyebrow:"من نخدم", seTitle:"موضع ثقة أصحاب المنازل والمطوّرين والمؤسسات", seLead:"مهما كان حجم العمل، نقدّم الانضباط الهندسي والعناية نفسيهما.",
+  se1t:"الفلل والمنازل", se1p:"بناء جديد وتوسعات وسباكة وترميم.", se2t:"المطوّرون والمقاولون", se2p:"مقاولات من الباطن وتوريد مواد وكوادر.",
+  se3t:"الجهات الحكومية والمؤسسات", se3p:"المباني العامة وأعمال البنية الأساسية.", se4t:"التجاري والتجزئة", se4p:"مكاتب ومحلات وتجهيزات بأقل توقف ممكن.",
+  bTitle:"تخطط لمشروع؟ احصل على عرض السعر اليوم.", bLead:"أرسل لنا المخططات أو بعض الصور عبر واتساب — وسنرد سريعاً بالخطوات التالية.", callNow:"اتصل الآن",
+  fqEyebrow:"الأسئلة الشائعة", fqTitle:"أسئلة يطرحها عملاؤنا", fqLead:"لم تجد إجابتك؟ راسلنا عبر واتساب وسنساعدك فوراً.",
+  q1:"ما المناطق التي تغطونها في عُمان؟", a1:"يقع مكتبنا الرئيسي في العذيبة بمسقط، وننفّذ مشاريع في أنحاء السلطنة — ومنها محافظة شمال الشرقية حيث عملنا في إبراء. تواصل معنا بموقعك وسنؤكد لك.",
+  q2:"هل تتقاضون رسوماً على زيارة الموقع أو عرض السعر؟", a2:"لا. نزور موقعك ونقيّم نطاق العمل ونرسل عرض سعر مفصّلاً مجاناً.",
+  q3:"هل يمكنكم توريد المواد فقط دون تركيب؟", a3:"نعم. يورّد قسمنا التجاري الأنابيب والقطع ومواد البناء للمقاولين والأفراد مع التوصيل إلى الموقع.",
+  q4:"هل تقبلون الأعمال الصغيرة إلى جانب المشاريع الكبيرة؟", a4:"نعم — من إصلاحات السباكة والترميم إلى مشاريع المباني والبنية الأساسية المتكاملة.",
+  q5:"هل أنتم شركة مسجّلة؟", a5:"نعم. معالم صفنان للتجارة والمقاولات ش.م.م شركة محدودة المسؤولية مسجّلة في سلطنة عُمان، سجل تجاري رقم ١٠٣٠٥٦٧.",
+  ctEyebrow:"اتصل بنا", ctTitle:"لنبنِ معاً شيئاً رائعاً", ctLead:"أخبرنا عن مشروعك واحصل على عرض سعر مجاني. تفضّل الحديث؟ اتصل بنا أو زُر مكتبنا في العذيبة.",
+  ofT:"زُر مكتبنا", ofP:"الدور الثاني، مكتب رقم ٦، العذيبة، مسقط · ص.ب ١٨٢٨، الرمز البريدي ١٣٠", lGsm:"الهاتف النقال", lTel:"هاتف المكتب",
+  fmT:"اطلب عرض السعر المجاني", fmS:"املأ النموذج ليفتح واتساب ببياناتك جاهزة للإرسال.", fN:"الاسم الكامل", fP:"رقم الهاتف", fS:"الخدمة", fL:"موقع المشروع",
+  fLph:"مثال: السيب، مسقط", fM:"تفاصيل المشروع", fMph:"صف العمل وحجمه والمدة المتوقعة باختصار…", fSend:"أرسل عبر واتساب", fNote:"نرد عادةً في اليوم نفسه خلال ساعات العمل.",
+  mapOpen:"افتح العذيبة، مسقط في خرائط جوجل",
+  ftAbout:"مقاولات المباني وأعمال السباكة والمياه وتجارة مواد البناء في أنحاء سلطنة عُمان.", ftSvc:"الخدمات", ftCo:"الشركة", ftCt:"تواصل معنا",
+  ftAddr:"الدور الثاني، مكتب ٦، العذيبة · ص.ب ١٨٢٨، ر.ب ١٣٠", ftName:"معالم صفنان للتجارة والمقاولات ش.م.م", ftCR:"س.ت", ftRights:"جميع الحقوق محفوظة.",
+  waTip:"تحتاج عرض سعر؟ تحدّث معنا 👋"
 };
-const nodes = [...document.querySelectorAll('[data-i18n]')];
-nodes.forEach(n => n.dataset.en = n.innerHTML);
-const btn = document.getElementById('langBtn');
+const nodes=[...document.querySelectorAll('[data-i18n]')];
+nodes.forEach(n=>n.dataset.en=n.innerHTML);
+const phs=[...document.querySelectorAll('[data-ph]')];
+phs.forEach(n=>n.dataset.phEn=n.placeholder);
+const btn=document.getElementById('langBtn');
 function setLang(l){
-  document.documentElement.lang = l;
-  document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
-  nodes.forEach(n => { n.innerHTML = l === 'ar' ? (AR[n.dataset.i18n] ?? n.dataset.en) : n.dataset.en; });
-  btn.textContent = l === 'ar' ? 'English' : 'العربية';
-  document.title = l === 'ar' ? 'معالم صفنان للتجارة والمقاولات ش.م.م' : 'Maulam Safnan Trading & Co. LLC';
-  try { localStorage.setItem('lang', l); } catch(e){}
+  const ar=l==='ar';
+  document.documentElement.lang=l; document.documentElement.dir=ar?'rtl':'ltr';
+  nodes.forEach(n=>n.innerHTML=ar?(AR[n.dataset.i18n]??n.dataset.en):n.dataset.en);
+  phs.forEach(n=>n.placeholder=ar?(AR[n.dataset.ph]??n.dataset.phEn):n.dataset.phEn);
+  btn.textContent=ar?'English':'العربية';
+  document.title=ar?'معالم صفنان للتجارة والمقاولات | مقاولات وسباكة وتوريد مواد البناء في عُمان':'Maulam Safnan Trading & Co. LLC | Contracting, Plumbing & Building Supply in Oman';
+  try{localStorage.setItem('lang',l)}catch(e){}
 }
-btn.addEventListener('click', () => setLang(document.documentElement.lang === 'ar' ? 'en' : 'ar'));
-let saved = null; try { saved = localStorage.getItem('lang'); } catch(e){}
-if (saved === 'ar' || (!saved && (navigator.language||'').startsWith('ar'))) setLang('ar');
+btn.addEventListener('click',()=>setLang(document.documentElement.lang==='ar'?'en':'ar'));
+let saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+if(saved==='ar'||(!saved&&(navigator.language||'').startsWith('ar')))setLang('ar');
 
-const menuBtn = document.getElementById('menuBtn'), links = document.getElementById('links');
-menuBtn.addEventListener('click', () => { const o = links.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', o); });
-links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
+const menuBtn=document.getElementById('menuBtn'),links=document.getElementById('links');
+menuBtn.addEventListener('click',()=>{const o=links.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o)});
+links.addEventListener('click',e=>{if(e.target.tagName==='A')links.classList.remove('open')});
 
-document.getElementById('qform').addEventListener('submit', e => {
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10),{passive:true});
+
+// service "Get a quote" links preselect the form
+document.querySelectorAll('[data-svc]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('svcSel').value=a.dataset.svc}));
+
+document.getElementById('qform').addEventListener('submit',e=>{
   e.preventDefault();
-  const f = new FormData(e.target);
-  const text = `Quotation request\nName: ${f.get('name')}\nPhone: ${f.get('phone')}\nService: ${f.get('service')}\n\n${f.get('msg')}`;
-  window.open('https://wa.me/96893444555?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  const f=new FormData(e.target), sel=document.getElementById('svcSel');
+  const svc=sel.options[sel.selectedIndex].text;
+  const t=`*Quotation request — Maulam Safnan*\nName: ${f.get('name')}\nPhone: ${f.get('phone')}\nService: ${svc}\nLocation: ${f.get('loc')||'-'}\n\n${f.get('msg')}`;
+  window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener');
 });
 
-document.getElementById('yr').textContent = new Date().getFullYear();
-const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } }), {threshold:.12}) : null;
-document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+// show WhatsApp tip briefly
+const wf=document.getElementById('waFloat');
+setTimeout(()=>{wf.classList.add('show-tip');setTimeout(()=>wf.classList.remove('show-tip'),5000)},3500);
+
+// if a photo fails to load, keep the branded gradient instead of a broken-image icon
+document.querySelectorAll('.ph img').forEach(i=>{const h=()=>i.style.visibility='hidden';if(i.complete&&!i.naturalWidth)h();else i.addEventListener('error',h)});
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'}):null;
+document.querySelectorAll('.reveal').forEach(el=>io?io.observe(el):el.classList.add('in'));
 </script>
 </body>
 </html>
