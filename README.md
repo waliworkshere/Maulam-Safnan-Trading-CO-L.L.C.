@@ -25,7 +25,7 @@ Bilingual (English / العربية) sales website for **Maulam Safnan Trading &
 - That site visits and quotations are free (stated in the hero and FAQ)
 
 ## Photos
-Stock photos are loaded from [Unsplash](https://unsplash.com) under the free Unsplash License. Replace them with real project photos whenever available — real work sells best.
+Stock photos in `assets/photos/` are from [Unsplash](https://unsplash.com), used under the free Unsplash License. Replace them with real project photos whenever available — real work sells best.
 
 ## Hosting
 Static site. To publish free with GitHub Pages: **Settings → Pages → Deploy from branch → `main` / root**.
